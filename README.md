@@ -48,7 +48,7 @@ conda create -n mamba_linux python=3.10 -y
 conda activate mamba_linux
 
 # 1. 先装 PyTorch (针对 CUDA 11.8)
-pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
+pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
 
 # 2. 安装 TSAD-Net 原有的依赖 (略微提升 NumPy 版本避免之前的报错)
 pip install transformers==4.33.1 numpy==1.23.5 pandas==1.5.3 scipy==1.9.1 scikit-learn==1.0.2 easydict==1.13 pynvml==12.0.0
